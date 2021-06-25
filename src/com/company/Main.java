@@ -1,30 +1,32 @@
 package com.company;
 
 
-
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(" start of  program");
-        kara();
-        kara();
-        kara();
-        kara();
+        System.out.println("Start of the program");
+
+
+        System.out.println(kara(23, 15));
+        System.out.println( kara(39, 26));
+        System.out.println(kara(34, 43));
+        System.out.println( kara(16, 18));
+        System.out.println( kara(13, 16));
         System.out.println("End of the program");
-
-
     }
 
-    public static void kara() {
-        int outside_temperature = 30;
-        int person_age = 25;
-        boolean sunny = true;
-        if (outside_temperature > 20 && person_age >10){
-            System.out.println("можно идти гулять");
-        }
-
+    public static String kara(int age, int tempera) {
+        if (age > 20 && age < 45 && tempera > -20 && tempera < 30) {
+            return "можно идти гулять1";
+        } else if (age < 25 && tempera > 0 && tempera < 28) {
+            return "можно идти гулять2";
+        } else if (age > 45 && tempera < -10 && tempera < -25) {
+            return "можно идти гулять3";
+        } else {
+            return "остовайтесь дома";
         }
     }
+}
 
 
 
